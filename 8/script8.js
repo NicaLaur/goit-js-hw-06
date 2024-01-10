@@ -7,11 +7,18 @@ loginForm.addEventListener('submit', function (event) {
     const emailValue = loginForm.querySelector('[name="email"]').value
     const passwordValue = loginForm.querySelector('[name="password"]').value
 
-    const formData = {
+    if (emailValue === '' || passwordValue === ''){
+        alert('Please fill in  all the fields !!')
+    return
+    } 
+        const formData = {
         email: emailValue,
         password: passwordValue
-    };
-    console.log(formData);
+     }
+
+        console.log(formData)
+
+    
 
     loginForm.reset();
 })

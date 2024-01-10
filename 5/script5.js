@@ -7,7 +7,7 @@ const inputName = document.querySelector('#name-input');
 
 inputName.addEventListener('input', function () {
    
-    const inputValue = inputName.value
+    const inputValue = inputName.value.trim()
     
 if (inputValue === '') {
     spanName.textContent = val
